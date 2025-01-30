@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment-03</title>
+    <title>Browse_4Pets</title>
     <link rel="shortcut icon" href="assets/logo-header.png" type="image/x-icon">
-    <!-- Google Font -->
+    <!-- Font Awsome -->
+    <script src="https://kit.fontawesome.com/367bb5e922.js" crossorigin="anonymous"></script>
+    <!-- ADLaM Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+    <!-- Sora Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
     <!-- DaisyUI & Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -17,18 +23,102 @@
         @theme {
         --color-clifford: #da373d;
         --font-adlam: ADLaM Display, serif;
+        --font-sora:  Sora, serif;
+        }
+        .font-size{
+            @apply text-xl font-normal
+        }
+        .primary-btn{
+            @apply bg-[#FFDC26] text-black px-8 py-2 rounded-lg
         }
     </style>
 </head>
-<body class="font-adlam">
+<body class="font-sora">
     <!-- Header Section -->
-    <header>
-        
+    <header class="max-w-screen-2xl mx-auto">
+        <!-- Navber Section -->
+        <nav class="bg-[#FFF9F4] py-7">
+            <div class="flex items-center justify-between max-w-screen-xl mx-auto">
+                <div class="flex gap-3 items-center text-2xl ">
+                    <img class="max-[576px]:pl-4" src="assets/logo-header.png" alt="">
+                    <h1 class="max-[576px]:hidden pr-28">Browse<span class="text-[#FFDC26]">4</span>Pets</h1>
+                </div>
+                <div class="flex gap-8 font-size max-[576px]:hidden cursor-pointer">
+                    <p>Find a pet</p>
+                    <p>Breeds</p>
+                    <p>Contact us</p>
+                </div>
+                <div class="flex items-center gap-7 max-[576px]:hidden">
+                    <div class="flex gap-5 cursor-pointer">
+                    <img class="h-7 w-7" src="assets/notification.png" alt="">
+                    <img class="h-7 w-7" src="assets/search.png" alt="">
+                    </div>
+                    <div class="outline outline-[#FFDC26] rounded-xl px-8 py-2 ">
+                        <button class="font-size ">Login</button>
+                    </div>
+                    <button class="primary-btn font-size">Register</button>
+                </div>
+                <div class="min-[576px]:hidden pr-4">
+                    <img src="assets/menu.png" alt="">
+                </div>
+            </div>
+        </nav>
+        <hr class="min-[576px]:hidden ">
+        <!-- Banner Section -->
+        <section class="lg:mt-16 lg:mb-32 max-w-screen-xl mx-auto px-4 pt-8 lg:h-[750px] h-[550px]">
+            <div class="relative z-10">
+                <h1 class="font-adlam lg:leading-[73px]">
+                    <span class="text-3xl lg:text-6xl">Pamper Your Pet, <br> Because They Deserve <br> the Bes</span>
+                </h1>
+                <p class="font-size lg:w-2/4 pt-4 pb-6 opacity-85">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+                <button class="primary-btn">Find a pet</button>
+            </div>
+            <div class="absolute top-96 lg:top-40">
+                <img src="assets/cat-big.png" alt="">
+            </div>
+        </section>
     </header>
     
     <!-- Body Section -->
-    <main>
+    <main class="max-w-screen-xl mx-auto px-4 mb-32">
 
+    <!-- Catagory Section -->
+    <section>
+        <p class="font-adlam text-2xl lg:text-3xl pb-8 lg:pb-12 ">Browse By Categories</p>
+        <!-- Card Section -->
+        <div class="grid grid-cols-2 lg:grid-cols-6 gap-6">
+            <div class="text-center bg-[#F9DF8A] py-9 rounded-xl">
+                <img class="mx-auto bg-white rounded-full p-7" src="assets/dog-cartoon.png" alt="">
+                <p class="font-adlam font-size pt-6 pb-3">Dog</p>
+                <p>30 items</p>
+            </div>
+            <div class="text-center bg-[#F9DF8A] py-9 rounded-xl">
+                <img class="mx-auto bg-white rounded-full p-7" src="assets/fish-cartoon.png" alt="">
+                <p class="font-adlam font-size pt-6 pb-3">Fish</p>
+                <p>19 items</p>
+            </div>
+            <div class="text-center bg-[#F9DF8A] py-9 rounded-xl">
+                <img class="mx-auto bg-white rounded-full p-7" src="assets/cat-cartoon.png" alt="">
+                <p class="font-adlam font-size pt-6 pb-3">Cat</p>
+                <p>28 items</p>
+            </div>
+            <div class="text-center bg-[#F9DF8A] py-9 rounded-xl">
+                <img class="mx-auto bg-white rounded-full p-7" src="assets/bird-cartoon.png" alt="">
+                <p class="font-adlam font-size pt-6 pb-3">Birds</p>
+                <p>15 items</p>
+            </div>
+            <div class="text-center bg-[#F9DF8A] py-9 rounded-xl">
+                <img class="mx-auto bg-white rounded-full p-7" src="assets/mouse-cartoon.png" alt="">
+                <p class="font-adlam font-size pt-8 pb-3">Small Pet</p>
+                <p>10 items</p>
+            </div>
+            <div class="text-center bg-[#F9DF8A] py-9 rounded-xl">
+                <img class="mx-auto bg-white rounded-full p-7" src="assets/rabbit-cartoon.png" alt="">
+                <p class="font-adlam font-size pt-6 pb-3">Rabit</p>
+                <p>7 items</p>
+            </div>
+        </div>
+    </section>
     </main>
 
     <!-- Footer Section -->
