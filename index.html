@@ -31,6 +31,9 @@
         .primary-btn{
             @apply bg-[#FFDC26] text-black px-8 py-2 rounded-lg
         }
+        .hover{
+            @apply hover:bg-black hover:text-white
+        }
     </style>
 </head>
 <body class="font-sora">
@@ -53,10 +56,10 @@
                     <img class="h-7 w-7" src="assets/notification.png" alt="">
                     <img class="h-7 w-7" src="assets/search.png" alt="">
                     </div>
-                    <div class="outline outline-[#FFDC26] rounded-xl px-8 py-2 ">
+                    <div class="outline outline-[#FFDC26] rounded-xl px-8 py-2 hover">
                         <button class="font-size ">Login</button>
                     </div>
-                    <button class="primary-btn font-size">Register</button>
+                    <button class="primary-btn font-size hover">Register</button>
                 </div>
                 <div class="min-[576px]:hidden pr-4">
                     <img src="assets/menu.png" alt="">
@@ -72,7 +75,7 @@
                         <span class="text-3xl lg:text-6xl">Pamper Your Pet, <br> Because They Deserve <br> the Bes</span>
                     </h1>
                     <p class="font-size lg:w-2/4 pt-4 pb-6 opacity-85">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
-                    <button class="primary-btn w-fit h-fit rounded-full max-[576px]:animate-bounce">Find a pet</button>
+                    <button class="primary-btn w-fit h-fit rounded-full max-[576px]:animate-bounce hover">Find a pet</button>
                 </div>
             </div>
             <div class="absolute top-96 lg:top-40 w-fit h-fit rounded-full max-[576px]:animate-bounce">
@@ -128,7 +131,7 @@
             <div class="relative bg-[#F9DF8A] lg:w-[420px] pt-12 pb-48 lg:px-8 px-5 rounded-xl">
                 <p class="font-adlam text-2xl lg:text-3xl">T- Shirt For Dogs</p>
                 <p class="opacity-85 py-5 w-2/3">Discover a world of treats, toys, and essentials handpicked for </p>
-                <div class="inline rounded-lg text-xl px-8 py-3 bg-white">
+                <div class="inline rounded-lg text-xl px-8 py-3 bg-white hover">
                     <button>Shop Now</button>
                 </div>
                 <div class="absolute top-32 lg:top-24 left-44 lg:left-48">
@@ -268,6 +271,43 @@
             </div>
         </div>
     </section>
+    <!-- Discount Section -->
+    <section class="max-w-screen-xl mx-auto px-4 mb-16 lg:mb-36">
+        <div>
+            <p class="font-adlam text-2xl lg:text-4xl pb-8 lg:pb-12">Discount On This Food</p>
+            <div class="grid gap-5 lg:grid-cols-4 grid-cols-2 items-center ">
+                <div class="text-center bg-[#F9DF8A] py-5 rounded-xl">
+                    <img class="w-[150px] mx-auto pb-2 rounded-2xl" src="assets/food1.png" alt="">
+                    <p class="text-xl lg:text-3xl lg:pt-6 pt-4 pb-2">$4.99</p>
+                    <div class="w-fit mx-auto rounded-lg text-xl px-8 py-3 bg-white hover">
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="text-center bg-[#F9DF8A] py-5 rounded-xl">
+                    <img class="w-[150px] mx-auto pb-2 rounded-2xl" src="assets/food2.png" alt="">
+                    <p class="text-xl lg:text-3xl lg:pt-6 pt-4 pb-2">$3.99</p>
+                    <div class="w-fit mx-auto rounded-lg text-xl px-8 py-3 bg-white hover">
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="text-center bg-[#F9DF8A] py-5 rounded-xl">
+                    <img class="w-[150px] mx-auto pb-2 rounded-2xl" src="assets/food3.png" alt="">
+                    <p class="text-xl lg:text-3xl lg:pt-6 pt-4 pb-2">$1.99</p>
+                    <div class="w-fit mx-auto rounded-lg text-xl px-8 py-3 bg-white hover">
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div >
+                <div class="text-center bg-[#F9DF8A] py-5 rounded-xl">
+                    <img class="w-[150px] mx-auto rounded-2xl" src="assets/food4.png" alt="">
+                    <p class="text-xl lg:text-3xl lg:pt-6 pt-4 pb-2">$2.99</p>
+                    <div class="w-fit mx-auto rounded-lg text-xl px-8 py-3 bg-white hover">
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Everyday Section -->
     <section class="relative max-w-screen-xl mx-auto px-4 mb-16 lg:mb-36">
         <p class="font-adlam text-2xl lg:text-4xl pb-8 lg:pb-12">Everyday Low Price</p>
@@ -306,13 +346,13 @@
             <p class="lg:pb-9 pb-5">Exclusive training tips, ticks, product deals and more.</p>
             <input type="text" placeholder="Enter Email..." class="bg-white  w-full h-16 text-center">
             <div class="lg:pt-9 pt-5 mx-auto">
-                <button class="primary-btn">Subscibe</button>
+                <button class="primary-btn hover">Subscibe</button>
             </div>
         </div>
     </section>
     </main>
     <!-- Footer Section -->
-    <footer class="bg-[rgba(255,220,38,0.5)] max-w-screen-2xl mx-auto px-2 mt-[310px] max-[576px]:pt-[450px] lg:mt-[450px]">
+    <footer class="bg-[rgba(255,220,38,0.5)] max-w-screen-2xl mx-auto px-2 mt-[350px] max-[576px]:pt-[450px] lg:mt-[400px]">
         <section class="max-w-screen-xl mx-auto px-2 pb-14 lg:pt-72 flex max-[576px]:flex-col lg:items-center justify-between space-y-10">
             <!-- Browse Box -->
             <div class="lg:w-[400px]">
